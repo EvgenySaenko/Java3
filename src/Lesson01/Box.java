@@ -36,6 +36,9 @@ public class Box<T extends Fruit> {
     //метод пересыпает из текущей коробки в другую
     // (помним про сортировку фруктов: нельзя яблоки высыпать в коробку с апельсинами).
     public void pour(Box<T> anotherBox) {
+        if (anotherBox==this){
+            return;
+        }
         for (int i = 0; i < listBox.size(); i++) {
             anotherBox.listBox.add(listBox.get(i));
         }
