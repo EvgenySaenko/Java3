@@ -1,6 +1,7 @@
 package Lesson05;
 
 public class Road extends Stage {
+
     public Road(int length) {
         this.length = length;
         this.description = "Дорога " + length + " метров";
